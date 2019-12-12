@@ -38,8 +38,10 @@ char *_getMachineUBINIZE();
 char *_getImageArch();
 char *_getDisplayType();
 char *_getHaveSmallFlash();
+char *_getHaveMiddleFlash();
 char *_getHaveTranscoding();
 char *_getHaveMultiTranscoding();
+char *_getHaveMultiLib();
 char *_getMachineProcModel();
 
 #endif

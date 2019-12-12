@@ -433,6 +433,11 @@ char *_getHaveSmallFlash()
 	return strdup(HAVE_SMALLFLASH);
 }
 
+char *_getHaveMiddleFlash()
+{
+	return strdup(HAVE_MIDDLEFLASH);
+}
+
 char *_getHaveTranscoding()
 {
 	return strdup(HAVE_TRANSCODING);
@@ -441,6 +446,11 @@ char *_getHaveTranscoding()
 char *_getHaveMultiTranscoding()
 {
 	return strdup(HAVE_MULTITRANSCODING);
+}
+
+char *_getHaveMultiLib()
+{
+	return strdup(HAVE_MULTILIB);
 }
 
 char *_getMachineProcModel() // return just value from proc entry

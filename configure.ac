@@ -184,11 +184,17 @@ AC_ARG_WITH(display-type,
 AC_SUBST(DISPLAY_TYPE)
 AC_DEFINE_UNQUOTED(DISPLAY_TYPE,"$DISPLAY_TYPE",[display type])
 
-AC_ARG_WITH(flash-type,
-	[  --with-flash-type=NAME flash type [[smallflash,...]]],
+AC_ARG_WITH(small-flash,
+	[  --with-small-flash=NAME flash type [[smallflash,...]]],
 	[HAVE_SMALLFLASH="$withval"],[HAVE_SMALLFLASH="true"])
 AC_SUBST(HAVE_SMALLFLASH)
 AC_DEFINE_UNQUOTED(HAVE_SMALLFLASH,"$HAVE_SMALLFLASH",[smallflash])
+
+AC_ARG_WITH(middle-flash,
+	[  --with-middle-flash=NAME flash type [[middleflash,...]]],
+	[HAVE_MIDDLEFLASH="$withval"],[HAVE_MIDDLEFLASH="true"])
+AC_SUBST(HAVE_MIDDLEFLASH)
+AC_DEFINE_UNQUOTED(HAVE_MIDDLEFLASH,"$HAVE_MIDDLEFLASH",[middleflash])
 
 AC_ARG_WITH(transcoding,
 	[  --with-transcoding=NAME transcoding [[transcoding,...]]],
@@ -201,6 +207,12 @@ AC_ARG_WITH(multitranscoding,
 	[HAVE_MULTITRANSCODING="$withval"],[HAVE_MULTITRANSCODING="true"])
 AC_SUBST(HAVE_MULTITRANSCODING)
 AC_DEFINE_UNQUOTED(HAVE_MULTITRANSCODING,"$HAVE_MULTITRANSCODING",[multitranscoding])
+
+AC_ARG_WITH(multilib,
+	[  --with-multilib=NAME multilib [[multilib,...]]],
+	[HAVE_MULTILIB="$withval"],[HAVE_MULTILIB="true"])
+AC_SUBST(HAVE_MULTILIB)
+AC_DEFINE_UNQUOTED(HAVE_MULTILIB,"$HAVE_MULTILIB",[multilib])
 
 AC_ARG_WITH(debug,
 	AS_HELP_STRING([--without-debug],[disable debugging code]),

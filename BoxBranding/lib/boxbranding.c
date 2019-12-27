@@ -448,6 +448,16 @@ char *_getHaveTranscoding()
 	return strdup(HAVE_TRANSCODING);
 }
 
+char *_getHaveHDMIinHD()
+{
+	return strdup(HAVE_HDMI_IN_HD);
+}
+
+char *_getHaveHDMIinFHD()
+{
+	return strdup(HAVE_HDMI_IN_FHD);
+}
+
 char *_getHaveMultiTranscoding()
 {
 	return strdup(HAVE_MULTITRANSCODING);

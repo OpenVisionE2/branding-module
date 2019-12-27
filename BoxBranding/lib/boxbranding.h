@@ -42,6 +42,8 @@ char *_getHaveSmallFlash();
 char *_getHaveMiddleFlash();
 char *_getHaveTranscoding();
 char *_getHaveMultiTranscoding();
+char *_getHaveHDMIinHD();
+char *_getHaveHDMIinFHD();
 char *_getHaveMultiLib();
 char *_getMachineProcModel();
 

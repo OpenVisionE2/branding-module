@@ -214,6 +214,18 @@ AC_ARG_WITH(multitranscoding,
 AC_SUBST(HAVE_MULTITRANSCODING)
 AC_DEFINE_UNQUOTED(HAVE_MULTITRANSCODING,"$HAVE_MULTITRANSCODING",[multitranscoding])
 
+AC_ARG_WITH(hdmi-in-hd,
+	[  --with-hdmi-in-hd=NAME hdmi-in-hd [[hdmi-in-hd......]]],
+	[HAVE_HDMI_IN_HD="$withval"],[HAVE_HDMI_IN_HD="true"])
+AC_SUBST(HAVE_HDMI_IN_HD)
+AC_DEFINE_UNQUOTED(HAVE_HDMI_IN_HD,"$HAVE_HDMI_IN_HD",[hdmi-in-hd])
+
+AC_ARG_WITH(hdmi-in-fhd,
+	[  --with-hdmi-in-fhd=NAME hdmi-in-fhd [[hdmi-in-fhd......]]],
+	[HAVE_HDMI_IN_FHD="$withval"],[HAVE_HDMI_IN_FHD="true"])
+AC_SUBST(HAVE_HDMI_IN_FHD)
+AC_DEFINE_UNQUOTED(HAVE_HDMI_IN_FHD,"$HAVE_HDMI_IN_FHD",[hdmi-in-fhd])
+
 AC_ARG_WITH(multilib,
 	[  --with-multilib=NAME multilib [[multilib,...]]],
 	[HAVE_MULTILIB="$withval"],[HAVE_MULTILIB="true"])

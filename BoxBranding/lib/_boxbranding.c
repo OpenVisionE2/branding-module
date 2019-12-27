@@ -48,6 +48,8 @@ MAKE_STRING_FUNCTION(getHaveSmallFlash)
 MAKE_STRING_FUNCTION(getHaveMiddleFlash)
 MAKE_STRING_FUNCTION(getHaveTranscoding)
 MAKE_STRING_FUNCTION(getHaveMultiTranscoding)
+MAKE_STRING_FUNCTION(getHaveHDMIinHD)
+MAKE_STRING_FUNCTION(getHaveHDMIinFHD)
 MAKE_STRING_FUNCTION(getHaveMultiLib)
 MAKE_STRING_FUNCTION(getMachineProcModel)
 
@@ -85,6 +87,8 @@ static PyMethodDef boxbrandingMethods[] = {
 	{ "getHaveMiddleFlash", getHaveMiddleFlash, METH_NOARGS, NULL },
 	{ "getHaveTranscoding", getHaveTranscoding, METH_NOARGS, NULL },
 	{ "getHaveMultiTranscoding", getHaveMultiTranscoding, METH_NOARGS, NULL },
+	{ "getHaveHDMIinHD", getHaveHDMIinHD, METH_NOARGS, NULL },
+	{ "getHaveHDMIinFHD", getHaveHDMIinFHD, METH_NOARGS, NULL },
 	{ "getHaveMultiLib", getHaveMultiLib, METH_NOARGS, NULL },
 	{ "getMachineProcModel", getMachineProcModel, METH_NOARGS, NULL },
 	{ NULL, NULL, 0, NULL }

@@ -91,6 +91,19 @@ static PyMethodDef boxbrandingMethods[] = {
 };
 
 /* Initialize the module */
+
+static struct PyModuleDef boxbranding_moduledef = {
+		PyModuleDef_HEAD_INIT,
+		"boxbranding",
+		"boxbranding",
+		-1,
+		NULL,
+		NULL,
+		NULL,
+		NULL,
+		NULL,
+	};
+
 void initboxbranding() {
-	Py_InitModule("boxbranding", boxbrandingMethods);
+	PyModule_Create(&boxbranding_moduledef);
 }

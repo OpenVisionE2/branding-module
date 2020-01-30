@@ -97,7 +97,7 @@ static struct PyModuleDef boxbranding_moduledef = {
 		"boxbranding",
 		"boxbranding",
 		-1,
-		NULL,
+		boxbrandingMethods,
 		NULL,
 		NULL,
 		NULL,

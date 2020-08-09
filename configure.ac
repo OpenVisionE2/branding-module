@@ -47,7 +47,7 @@ AC_SUBST(BOXBRAND)
 AC_DEFINE_UNQUOTED(BOXBRAND,"$BOXBRAND",[box brand])
 
 AC_ARG_WITH(oever,
-	[  --with-oever=NAME oe name [[7.2,...]]],
+	[  --with-oever=NAME oe name [[10.1,...]]],
 	[OE_VER="$withval"],[OE_VER=""])
 AC_SUBST(OE_VER)
 AC_DEFINE_UNQUOTED(OE_VER,"$OE_VER",[oe name])
@@ -315,6 +315,12 @@ AC_ARG_WITH(vfd-symbol,
 	[HAVE_VFDSYMBOL="$withval"],[HAVE_VFDSYMBOL="True"])
 AC_SUBST(HAVE_VFDSYMBOL)
 AC_DEFINE_UNQUOTED(HAVE_VFDSYMBOL,"$HAVE_VFDSYMBOL",[vfdsymbol])
+
+AC_ARG_WITH(kernelversion,
+	[  --with-kernelversion=NAME kernel version [[4,...]]],
+	[KERNELVERSION="$withval"],[KERNELVERSION=""])
+AC_SUBST(KERNELVERSION)
+AC_DEFINE_UNQUOTED(KERNELVERSION,"$KERNELVERSION",[oe name])
 
 AC_ARG_WITH(debug,
 	AS_HELP_STRING([--without-debug],[disable debugging code]),

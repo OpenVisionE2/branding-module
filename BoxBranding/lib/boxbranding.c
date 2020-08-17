@@ -208,7 +208,7 @@ char *_getBoxType()
 		}
 	}
 	else if(strcmp(BOXTYPE, "sf8008") == 0)
-	{
+	{	
 		boxtype_name = ReadProcEntry("/proc/stb/info/type");
 		if(strcmp(boxtype_name, "12") == 0)
 		{
@@ -327,12 +327,6 @@ char *_getMachineName()
 			free(boxtype_name);
 			return strdup(MACHINE_NAME);
 		}
-	}
-	/** AZBox detection */
-	else if (fileExist("/proc/stb/info/azmodel") && fileExist("/proc/stb/info/model"))
-	{
-		boxtype_name = ReadProcEntry("/proc/stb/info/model");
-		free(boxtype_name);
 	}
 	else if (fileExist("/proc/stb/info/model"))
 	{

@@ -208,7 +208,7 @@ char *_getBoxType()
 		}
 	}
 	else if(strcmp(BOXTYPE, "sf8008") == 0)
-	{	
+	{
 		boxtype_name = ReadProcEntry("/proc/stb/info/type");
 		if(strcmp(boxtype_name, "12") == 0)
 		{
@@ -683,5 +683,87 @@ char *_getRCType()
 
 char *_getRCName()
 {
+	char *boxtype_name = NULL;
+	if(strcmp(RCNAME, "ini0") == 0)
+	{
+		boxtype_name = ReadProcEntry("/proc/stb/info/boxtype");
+		if(strcmp(boxtype_name, "ini-3000") == 0)
+		{
+			free(boxtype_name);
+			boxtype_name = ReadProcEntry("/proc/stb/fp/version");
+			if(startsWith(boxtype_name, "1"))
+			{
+				free(boxtype_name);
+				return strdup(RCNAME);
+			}
+			else
+			{
+				free(boxtype_name);
+				return strdup("ini2");
+			}
+		}
+		else if(strcmp(boxtype_name, "ini-5000") == 0)
+		{
+			free(boxtype_name);
+			return strdup("ini1");
+		}
+		else if(strcmp(boxtype_name, "ini-7000") == 0)
+		{
+			free(boxtype_name);
+			return strdup("ini1");
+		}
+		else if(strcmp(boxtype_name, "ini-7012") == 0)
+		{
+			free(boxtype_name);
+			return strdup("ini1");
+		}
+	}
+	else if(strcmp(RCNAME, "et9x00") == 0)
+	{
+		boxtype_name = ReadProcEntry("/proc/stb/info/boxtype");
+		if(strcmp(boxtype_name, "et9500") == 0)
+		{
+			free(boxtype_name);
+			return strdup("et9500");
+		}
+		else
+		{
+			free(boxtype_name);
+			return strdup(RCNAME);
+		}
+	}
+	else if(strcmp(RCNAME, "et6x00") == 0)
+	{
+		boxtype_name = ReadProcEntry("/proc/stb/info/boxtype");
+		if(strcmp(boxtype_name, "et6500") == 0)
+		{
+			free(boxtype_name);
+			return strdup("et6500");
+		}
+		else
+		{
+			free(boxtype_name);
+			return strdup(RCNAME);
+		}
+	}
+	else if(strcmp(RCNAME, "azboxhd") == 0)
+	{
+		boxtype_name = ReadProcEntry("/proc/stb/info/model");
+		if(strcmp(boxtype_name, "elite") == 0)
+		{
+			free(boxtype_name);
+			return strdup("azboxelite");
+		}
+		else if(strcmp(boxtype_name, "ultra") == 0)
+		{
+			free(boxtype_name);
+			return strdup("azboxelite");
+		}
+		else
+		{
+			free(boxtype_name);
+			return strdup(RCNAME);
+		}
+	}
 	return strdup(RCNAME);
 }

@@ -304,7 +304,7 @@ char *_getMachineProcModel() // return just value from proc entry
 		}
 		else
 		{
-			return strdup(MACHINE_NAME);
+			return strdup(BOXTYPE);
 		}
 	}
 	/** VU+ detection */
@@ -337,7 +337,7 @@ char *_getMachineProcModel() // return just value from proc entry
 			return real_boxtype_name;
 		}
 	}
-	return strdup(MACHINE_NAME);
+	return strdup(BOXTYPE);
 }
 
 char *_getHaveHDMI()

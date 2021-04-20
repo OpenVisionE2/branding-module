@@ -328,6 +328,12 @@ AC_ARG_WITH(e2service,
 AC_SUBST(E2SERVICE)
 AC_DEFINE_UNQUOTED(E2SERVICE,"$E2SERVICE",[service name])
 
+AC_ARG_WITH(dboxlcd,
+	[  --with-dboxlcd=NAME dboxlcd [[dboxlcd......]]],
+	[SUPPORT_DBOXLCD="$withval"],[SUPPORT_DBOXLCD="True"])
+AC_SUBST(SUPPORT_DBOXLCD)
+AC_DEFINE_UNQUOTED(SUPPORT_DBOXLCD,"$SUPPORT_DBOXLCD",[dboxlcd])
+
 AC_ARG_WITH(debug,
 	AS_HELP_STRING([--without-debug],[disable debugging code]),
 	[with_debug="$withval"],[with_debug=""])

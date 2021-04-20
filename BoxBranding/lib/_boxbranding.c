@@ -68,6 +68,7 @@ MAKE_STRING_FUNCTION(getRCName)
 MAKE_STRING_FUNCTION(getRCIDNum)
 MAKE_STRING_FUNCTION(getFHDSkin)
 MAKE_STRING_FUNCTION(getE2Service)
+MAKE_STRING_FUNCTION(getDBoxLCD)
 
 /* Module specification */
 static PyMethodDef boxbrandingMethods[] = {
@@ -123,6 +124,7 @@ static PyMethodDef boxbrandingMethods[] = {
 	{ "getRCIDNum", getRCIDNum, METH_NOARGS, NULL },
 	{ "getFHDSkin", getFHDSkin, METH_NOARGS, NULL },
 	{ "getE2Service", getE2Service, METH_NOARGS, NULL },
+	{ "getDBoxLCD", getDBoxLCD, METH_NOARGS, NULL },
 	{ NULL, NULL, 0, NULL }
 };
 

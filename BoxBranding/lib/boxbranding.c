@@ -547,3 +547,10 @@ char *_getE2Service()
 {
 	return strdup(E2SERVICE);
 }
+
+char *_getDBoxLCD()
+{
+	if(strcmp(SUPPORT_DBOXLCD, "False") == 0)
+		return strdup("");
+	return strdup(SUPPORT_DBOXLCD);
+}

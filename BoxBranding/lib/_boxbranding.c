@@ -20,9 +20,11 @@ MAKE_STRING_FUNCTION(getVisionVersion)
 MAKE_STRING_FUNCTION(getVisionRevision)
 MAKE_STRING_FUNCTION(getDeveloperName)
 MAKE_STRING_FUNCTION(getBoxBrand)
+MAKE_STRING_FUNCTION(getDisplayBrand)
 MAKE_STRING_FUNCTION(getOEVersion)
 MAKE_STRING_FUNCTION(getImageDistro)
 MAKE_STRING_FUNCTION(getBoxType)
+MAKE_STRING_FUNCTION(getDisplayModel)
 MAKE_STRING_FUNCTION(getMachineBuild)
 MAKE_STRING_FUNCTION(getImageVersion)
 MAKE_STRING_FUNCTION(getImageBuild)
@@ -76,9 +78,11 @@ static PyMethodDef boxbrandingMethods[] = {
 	{ "getVisionRevision", getVisionRevision, METH_NOARGS, NULL },
 	{ "getDeveloperName", getDeveloperName, METH_NOARGS, NULL },
 	{ "getBoxBrand", getBoxBrand, METH_NOARGS, NULL },
+	{ "getDisplayBrand", getDisplayBrand, METH_NOARGS, NULL },
 	{ "getOEVersion", getOEVersion, METH_NOARGS, NULL },
 	{ "getImageDistro", getImageDistro, METH_NOARGS, NULL },
 	{ "getBoxType", getBoxType, METH_NOARGS, NULL },
+	{ "getDisplayModel", getDisplayModel, METH_NOARGS, NULL },
 	{ "getMachineBuild", getMachineBuild, METH_NOARGS, NULL },
 	{ "getImageVersion", getImageVersion, METH_NOARGS, NULL },
 	{ "getImageBuild", getImageBuild, METH_NOARGS, NULL },

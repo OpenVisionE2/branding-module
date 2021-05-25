@@ -46,6 +46,12 @@ AC_ARG_WITH(boxbrand,
 AC_SUBST(BOXBRAND)
 AC_DEFINE_UNQUOTED(BOXBRAND,"$BOXBRAND",[box brand])
 
+AC_ARG_WITH(displaybrand,
+	[  --with-displaybrand=NAME box display brand [[dreambox,...]]],
+	[DISPLAYBRAND="$withval"],[DISPLAYBRAND=""])
+AC_SUBST(DISPLAYBRAND)
+AC_DEFINE_UNQUOTED(DISPLAYBRAND,"$DISPLAYBRAND",[box display brand])
+
 AC_ARG_WITH(oever,
 	[  --with-oever=NUMBER oe number [[10.1,...]]],
 	[OE_VER="$withval"],[OE_VER=""])
@@ -59,10 +65,16 @@ AC_SUBST(DISTRO)
 AC_DEFINE_UNQUOTED(DISTRO,"$DISTRO",[distro name])
 
 AC_ARG_WITH(boxtype,
-	[  --with-boxtype=NAME box type [[dm800,...]]],
+	[  --with-boxtype=NAME box model [[dm800,...]]],
 	[BOXTYPE="$withval"],[BOXTYPE=""])
 AC_SUBST(BOXTYPE)
-AC_DEFINE_UNQUOTED(BOXTYPE,"$BOXTYPE",[box type])
+AC_DEFINE_UNQUOTED(BOXTYPE,"$BOXTYPE",[box model])
+
+AC_ARG_WITH(displaymodel,
+	[  --with-displaymodel=NAME box display model [[dm800,...]]],
+	[DISPLAYMODEL="$withval"],[DISPLAYMODEL=""])
+AC_SUBST(DISPLAYMODEL)
+AC_DEFINE_UNQUOTED(DISPLAYMODEL,"$DISPLAYMODEL",[box display model])
 
 AC_ARG_WITH(machinebuild,
 	[  --with-machinebuild=NAME stb platform [[dm800,...]]],

@@ -90,6 +90,11 @@ char *_getBoxBrand()
 	return strdup(BOXBRAND);
 }
 
+char *_getDisplayBrand()
+{
+	return strdup(DISPLAYBRAND);
+}
+
 char *_getOEVersion()
 {
 	return strdup(OE_VER);
@@ -103,6 +108,11 @@ char *_getImageDistro()
 char *_getBoxType()
 {
 	return strdup(BOXTYPE);
+}
+
+char *_getDisplayModel()
+{
+	return strdup(DISPLAYMODEL);
 }
 
 char *_getMachineBuild()

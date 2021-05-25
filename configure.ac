@@ -22,17 +22,23 @@ AM_PATH_PYTHON
 AX_PYTHON_DEVEL
 AX_PTHREAD
 
-AC_ARG_WITH(visionversion,
-	[  --with-visionversion=NUMBER vision version [[number,...]]],
-	[VISIONVERSION="$withval"],[VISIONVERSION=""])
-AC_SUBST(VISIONVERSION)
-AC_DEFINE_UNQUOTED(VISIONVERSION,"$VISIONVERSION",[vision version])
+AC_ARG_WITH(imgversion,
+	[  --with-imgversion=NUMBER image version [[number,...]]],
+	[IMGVERSION="$withval"],[IMGVERSION=""])
+AC_SUBST(IMGVERSION)
+AC_DEFINE_UNQUOTED(IMGVERSION,"$IMGVERSION",[image version])
 
-AC_ARG_WITH(visionrevision,
-	[  --with-visionrevision=NUMBER vision revision [[number,...]]],
-	[VISIONREVISION="$withval"],[VISIONREVISION=""])
-AC_SUBST(VISIONREVISION)
-AC_DEFINE_UNQUOTED(VISIONREVISION,"$VISIONREVISION",[vision revision])
+AC_ARG_WITH(imgrevision,
+	[  --with-imgrevision=NUMBER image revision [[number,...]]],
+	[IMGREVISION="$withval"],[IMGREVISION=""])
+AC_SUBST(IMGREVISION)
+AC_DEFINE_UNQUOTED(IMGREVISION,"$IMGREVISION",[image revision])
+
+AC_ARG_WITH(imglanguage,
+	[  --with-imglanguage=NUMBER image language [[english,...]]],
+	[IMGLANGUAGE="$withval"],[IMGLANGUAGE=""])
+AC_SUBST(IMGLANGUAGE)
+AC_DEFINE_UNQUOTED(IMGLANGUAGE,"$IMGLANGUAGE",[image language])
 
 AC_ARG_WITH(developername,
 	[  --with-developername=NAME developer name [[persianprince,...]]],

@@ -70,14 +70,19 @@ char* ReadProcEntry(char *filename)
 	return real_boxtype_name;
 }
 
-char *_getVisionVersion()
+char *_getIMGVersion()
 {
-	return strdup(VISIONVERSION);
+	return strdup(IMGVERSION);
 }
 
-char *_getVisionRevision()
+char *_getIMGRevision()
 {
-	return strdup(VISIONREVISION);
+	return strdup(IMGREVISION);
+}
+
+char *_getIMGLanguage()
+{
+	return strdup(IMGLANGUAGE);
 }
 
 char *_getDeveloperName()

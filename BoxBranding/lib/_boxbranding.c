@@ -24,6 +24,7 @@ MAKE_STRING_FUNCTION(getBoxBrand)
 MAKE_STRING_FUNCTION(getDisplayBrand)
 MAKE_STRING_FUNCTION(getOEVersion)
 MAKE_STRING_FUNCTION(getImageDistro)
+MAKE_STRING_FUNCTION(getDisplayDistro)
 MAKE_STRING_FUNCTION(getBoxType)
 MAKE_STRING_FUNCTION(getDisplayModel)
 MAKE_STRING_FUNCTION(getMachineBuild)
@@ -83,6 +84,7 @@ static PyMethodDef boxbrandingMethods[] = {
 	{ "getDisplayBrand", getDisplayBrand, METH_NOARGS, NULL },
 	{ "getOEVersion", getOEVersion, METH_NOARGS, NULL },
 	{ "getImageDistro", getImageDistro, METH_NOARGS, NULL },
+	{ "getDisplayDistro", getDisplayDistro, METH_NOARGS, NULL },
 	{ "getBoxType", getBoxType, METH_NOARGS, NULL },
 	{ "getDisplayModel", getDisplayModel, METH_NOARGS, NULL },
 	{ "getMachineBuild", getMachineBuild, METH_NOARGS, NULL },

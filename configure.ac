@@ -70,6 +70,12 @@ AC_ARG_WITH(distro,
 AC_SUBST(DISTRO)
 AC_DEFINE_UNQUOTED(DISTRO,"$DISTRO",[distro name])
 
+AC_ARG_WITH(displaydistro,
+	[  --with-displaydistro=NAME display distro name [[Open Vision,...]]],
+	[DISPLAYDISTRO="$withval"],[DISPLAYDISTRO=""])
+AC_SUBST(DISPLAYDISTRO)
+AC_DEFINE_UNQUOTED(DISPLAYDISTRO,"$DISPLAYDISTRO",[display distro name])
+
 AC_ARG_WITH(boxtype,
 	[  --with-boxtype=NAME box model [[dm800,...]]],
 	[BOXTYPE="$withval"],[BOXTYPE=""])

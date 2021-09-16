@@ -110,6 +110,11 @@ char *_getImageDistro()
 	return strdup(DISTRO);
 }
 
+char *_getDisplayDistro()
+{
+	return strdup(DISPLAYDISTRO);
+}
+
 char *_getBoxType()
 {
 	return strdup(BOXTYPE);

@@ -18,6 +18,7 @@ char *_getBoxBrand();
 char *_getDisplayBrand();
 char *_getOEVersion();
 char *_getImageDistro();
+char *_getDisplayDistro();
 char *_getBoxType();
 char *_getDisplayModel();
 char *_getMachineBuild();

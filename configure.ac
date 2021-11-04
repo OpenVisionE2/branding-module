@@ -58,6 +58,12 @@ AC_ARG_WITH(displaybrand,
 AC_SUBST(DISPLAYBRAND)
 AC_DEFINE_UNQUOTED(DISPLAYBRAND,"$DISPLAYBRAND",[box display brand])
 
+AC_ARG_WITH(friendlyfamily,
+	[  --with-friendlyfamily=NAME friendly family [[zgemmah9s zgemmah9t zgemmah92s zgemmah92h zgemmah9splus]]],
+	[FRIENDLYFAMILY="$withval"],[FRIENDLYFAMILY=""])
+AC_SUBST(FRIENDLYFAMILY)
+AC_DEFINE_UNQUOTED(FRIENDLYFAMILY,"$FRIENDLYFAMILY",[friendly family])
+
 AC_ARG_WITH(oever,
 	[  --with-oever=NUMBER oe number [[10.1,...]]],
 	[OE_VER="$withval"],[OE_VER=""])

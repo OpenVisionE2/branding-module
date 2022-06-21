@@ -110,6 +110,11 @@ char *_getOEVersion()
 	return strdup(OE_VER);
 }
 
+char *_getDriverDate()
+{
+	return strdup(DRIVERDATE);
+}
+
 char *_getImageDistro()
 {
 	return strdup(DISTRO);

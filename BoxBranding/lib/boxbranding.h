@@ -18,6 +18,7 @@ char *_getBoxBrand();
 char *_getDisplayBrand();
 char *_getFriendlyFamily();
 char *_getOEVersion();
+char *_getDriverDate();
 char *_getImageDistro();
 char *_getDisplayDistro();
 char *_getBoxType();

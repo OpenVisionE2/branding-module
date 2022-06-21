@@ -70,6 +70,12 @@ AC_ARG_WITH(oever,
 AC_SUBST(OE_VER)
 AC_DEFINE_UNQUOTED(OE_VER,"$OE_VER",[oe number])
 
+AC_ARG_WITH(driverdate,
+	[  --with-driverdate=NUMBER driver date [[2022]]],
+	[DRIVERDATE="$withval"],[DRIVERDATE=""])
+AC_SUBST(DRIVERDATE)
+AC_DEFINE_UNQUOTED(DRIVERDATE,"$DRIVERDATE",[driver date])
+
 AC_ARG_WITH(distro,
 	[  --with-distro=NAME distro name [[openvision,...]]],
 	[DISTRO="$withval"],[DISTRO=""])

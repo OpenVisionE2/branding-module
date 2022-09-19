@@ -580,7 +580,21 @@ char *_getE2Service()
 
 char *_getDBoxLCD()
 {
-	if(strcmp(SUPPORT_DBOXLCD, "False") == 0)
+	if(strcmp(HAVE_DBOXLCD, "False") == 0)
 		return strdup("");
-	return strdup(SUPPORT_DBOXLCD);
+	return strdup(HAVE_DBOXLCD);
+}
+
+char *_getEMMC()
+{
+	if(strcmp(HAVE_EMMC, "False") == 0)
+		return strdup("");
+	return strdup(HAVE_EMMC);
+}
+
+char *_getMMC()
+{
+	if(strcmp(HAVE_MMC, "False") == 0)
+		return strdup("");
+	return strdup(HAVE_MMC);
 }

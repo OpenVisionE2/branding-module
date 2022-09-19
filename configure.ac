@@ -366,9 +366,21 @@ AC_DEFINE_UNQUOTED(E2SERVICE,"$E2SERVICE",[service name])
 
 AC_ARG_WITH(dboxlcd,
 	[  --with-dboxlcd=NAME dboxlcd [[dboxlcd......]]],
-	[SUPPORT_DBOXLCD="$withval"],[SUPPORT_DBOXLCD="True"])
-AC_SUBST(SUPPORT_DBOXLCD)
-AC_DEFINE_UNQUOTED(SUPPORT_DBOXLCD,"$SUPPORT_DBOXLCD",[dboxlcd])
+	[HAVE_DBOXLCD="$withval"],[HAVE_DBOXLCD="True"])
+AC_SUBST(HAVE_DBOXLCD)
+AC_DEFINE_UNQUOTED(HAVE_DBOXLCD,"$HAVE_DBOXLCD",[dboxlcd])
+
+AC_ARG_WITH(mmc,
+	[  --with-mmc=NAME mmc [[mmc......]]],
+	[HAVE_MMC="$withval"],[HAVE_MMC="True"])
+AC_SUBST(HAVE_MMC)
+AC_DEFINE_UNQUOTED(HAVE_MMC,"$HAVE_MMC",[mmc])
+
+AC_ARG_WITH(emmc,
+	[  --with-emmc=NAME emmc [[emmc......]]],
+	[HAVE_EMMC="$withval"],[HAVE_EMMC="True"])
+AC_SUBST(HAVE_EMMC)
+AC_DEFINE_UNQUOTED(HAVE_EMMC,"$HAVE_EMMC",[emmc])
 
 AC_ARG_WITH(debug,
 	AS_HELP_STRING([--without-debug],[disable debugging code]),

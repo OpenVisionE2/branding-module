@@ -69,5 +69,7 @@ char *_getRCIDNum();
 char *_getFHDSkin();
 char *_getE2Service();
 char *_getDBoxLCD();
+char *_getEMMC();
+char *_getMMC();
 
 #endif

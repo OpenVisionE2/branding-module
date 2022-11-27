@@ -65,6 +65,7 @@ MAKE_STRING_FUNCTION(getHaveHDMIinHD)
 MAKE_STRING_FUNCTION(getHaveHDMIinFHD)
 MAKE_STRING_FUNCTION(getHaveWOL)
 MAKE_STRING_FUNCTION(getHaveCI)
+MAKE_STRING_FUNCTION(getHaveFan)
 MAKE_STRING_FUNCTION(getBlindscanBin)
 MAKE_STRING_FUNCTION(getSoCFamily)
 MAKE_STRING_FUNCTION(getHaveVFDSymbol)
@@ -129,6 +130,7 @@ static PyMethodDef boxbrandingMethods[] = {
 	{ "getHaveHDMIinFHD", getHaveHDMIinFHD, METH_NOARGS, NULL },
 	{ "getHaveWOL", getHaveWOL, METH_NOARGS, NULL },
 	{ "getHaveCI", getHaveCI, METH_NOARGS, NULL },
+	{ "getHaveFan", getHaveFan, METH_NOARGS, NULL },
 	{ "getBlindscanBin", getBlindscanBin, METH_NOARGS, NULL },
 	{ "getSoCFamily", getSoCFamily, METH_NOARGS, NULL },
 	{ "getHaveVFDSymbol", getHaveVFDSymbol, METH_NOARGS, NULL },

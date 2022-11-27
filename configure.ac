@@ -310,6 +310,12 @@ AC_ARG_WITH(ci,
 AC_SUBST(HAVE_CI)
 AC_DEFINE_UNQUOTED(HAVE_CI,"$HAVE_CI",[ci])
 
+AC_ARG_WITH(fan,
+	[  --with-fan=NAME fan [[fan......]]],
+	[HAVE_FAN="$withval"],[HAVE_FAN="True"])
+AC_SUBST(HAVE_FAN)
+AC_DEFINE_UNQUOTED(HAVE_FAN,"$HAVE_FAN",[fan])
+
 AC_ARG_WITH(blindscanbinary,
 	[  --with-blindscanbinary=NAME blindscan binary [[blindscan,...]]],
 	[BLINDSCANBINARY="$withval"],[BLINDSCANBINARY=""])

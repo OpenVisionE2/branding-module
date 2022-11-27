@@ -447,6 +447,13 @@ char *_getHaveCI()
 	return strdup(HAVE_CI);
 }
 
+char *_getHaveFan()
+{
+	if(strcmp(HAVE_FAN, "False") == 0)
+		return strdup("");
+	return strdup(HAVE_FAN);
+}
+
 char *_getBlindscanBin()
 {
 	return strdup(BLINDSCANBINARY);

@@ -59,6 +59,7 @@ char *_getHaveHDMIinHD();
 char *_getHaveHDMIinFHD();
 char *_getHaveWOL();
 char *_getHaveCI();
+char *_getHaveFan();
 char *_getBlindscanBin();
 char *_getSoCFamily();
 char *_getHaveVFDSymbol();

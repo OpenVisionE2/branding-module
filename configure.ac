@@ -274,12 +274,6 @@ AC_ARG_WITH(scart,
 AC_SUBST(HAVE_SCART)
 AC_DEFINE_UNQUOTED(HAVE_SCART,"$HAVE_SCART",[scart])
 
-AC_ARG_WITH(dvi,
-	[  --with-dvi=NAME dvi [[dvi......]]],
-	[HAVE_DVI="$withval"],[HAVE_DVI="True"])
-AC_SUBST(HAVE_DVI)
-AC_DEFINE_UNQUOTED(HAVE_DVI,"$HAVE_DVI",[dvi])
-
 AC_ARG_WITH(svideo,
 	[  --with-svideo=NAME svideo [[svideo......]]],
 	[HAVE_SVIDEO="$withval"],[HAVE_SVIDEO="True"])

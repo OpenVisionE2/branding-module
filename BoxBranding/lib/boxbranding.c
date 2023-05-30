@@ -405,13 +405,6 @@ char *_getHaveSCART()
 	return strdup(HAVE_SCART);
 }
 
-char *_getHaveDVI()
-{
-	if(strcmp(HAVE_DVI, "False") == 0)
-		return strdup("");
-	return strdup(HAVE_DVI);
-}
-
 char *_getHaveSVIDEO()
 {
 	if(strcmp(HAVE_SVIDEO, "False") == 0)

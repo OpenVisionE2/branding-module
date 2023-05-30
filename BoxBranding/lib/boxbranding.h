@@ -53,7 +53,6 @@ char *_getHaveYUV();
 char *_getHaveRCA();
 char *_getHaveAVJACK();
 char *_getHaveSCART();
-char *_getHaveDVI();
 char *_getHaveSVIDEO();
 char *_getHaveHDMIinHD();
 char *_getHaveHDMIinFHD();

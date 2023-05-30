@@ -2,3 +2,4 @@ branding-module [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-b
 ===============
 Open Vision branding lib
 * Replaced with enigma kernel module: https://github.com/OpenVisionE2/enigma-module
+* Read about supported calls: https://github.com/OpenVisionE2/enigma-module/blob/master/KERNELMODULE.md

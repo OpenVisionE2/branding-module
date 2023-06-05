@@ -77,6 +77,7 @@ MAKE_STRING_FUNCTION(getE2Service)
 MAKE_STRING_FUNCTION(getDBoxLCD)
 MAKE_STRING_FUNCTION(getEMMC)
 MAKE_STRING_FUNCTION(getMMC)
+MAKE_STRING_FUNCTION(getUHD4K)
 
 /* Module specification */
 static PyMethodDef boxbrandingMethods[] = {
@@ -141,6 +142,7 @@ static PyMethodDef boxbrandingMethods[] = {
 	{ "getDBoxLCD", getDBoxLCD, METH_NOARGS, NULL },
 	{ "getEMMC", getEMMC, METH_NOARGS, NULL },
 	{ "getMMC", getMMC, METH_NOARGS, NULL },
+	{ "getUHD4K", getUHD4K, METH_NOARGS, NULL },
 	{ NULL, NULL, 0, NULL }
 };
 

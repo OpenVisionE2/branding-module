@@ -71,5 +71,6 @@ char *_getE2Service();
 char *_getDBoxLCD();
 char *_getEMMC();
 char *_getMMC();
+char *_getUHD4K();
 
 #endif

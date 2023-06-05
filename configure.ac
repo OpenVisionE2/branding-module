@@ -370,17 +370,23 @@ AC_ARG_WITH(dboxlcd,
 AC_SUBST(HAVE_DBOXLCD)
 AC_DEFINE_UNQUOTED(HAVE_DBOXLCD,"$HAVE_DBOXLCD",[dboxlcd])
 
+AC_ARG_WITH(emmc,
+	[  --with-emmc=NAME emmc [[emmc......]]],
+	[HAVE_EMMC="$withval"],[HAVE_EMMC="True"])
+AC_SUBST(HAVE_EMMC)
+AC_DEFINE_UNQUOTED(HAVE_EMMC,"$HAVE_EMMC",[emmc])
+
 AC_ARG_WITH(mmc,
 	[  --with-mmc=NAME mmc [[mmc......]]],
 	[HAVE_MMC="$withval"],[HAVE_MMC="True"])
 AC_SUBST(HAVE_MMC)
 AC_DEFINE_UNQUOTED(HAVE_MMC,"$HAVE_MMC",[mmc])
 
-AC_ARG_WITH(emmc,
-	[  --with-emmc=NAME emmc [[emmc......]]],
-	[HAVE_EMMC="$withval"],[HAVE_EMMC="True"])
-AC_SUBST(HAVE_EMMC)
-AC_DEFINE_UNQUOTED(HAVE_EMMC,"$HAVE_EMMC",[emmc])
+AC_ARG_WITH(uhd4k,
+	[  --with-uhd4k=NAME uhd4k [[uhd4k......]]],
+	[HAVE_UHD4K="$withval"],[HAVE_UHD4K="True"])
+AC_SUBST(HAVE_UHD4K)
+AC_DEFINE_UNQUOTED(HAVE_UHD4K,"$HAVE_UHD4K",[uhd4k])
 
 AC_ARG_WITH(debug,
 	AS_HELP_STRING([--without-debug],[disable debugging code]),

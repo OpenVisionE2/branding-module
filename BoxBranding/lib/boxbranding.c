@@ -598,3 +598,10 @@ char *_getMMC()
 		return strdup("");
 	return strdup(HAVE_MMC);
 }
+
+char *_getUHD4K()
+{
+	if(strcmp(HAVE_UHD4K, "False") == 0)
+		return strdup("");
+	return strdup(HAVE_UHD4K);
+}
